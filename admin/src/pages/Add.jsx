@@ -64,6 +64,10 @@ const Add = ({token}) => {
         setImage3(false)
         setImage4(false)
         setPrice('')
+        setBestseller(false);
+        setSizes([]);
+        setCategory('Men');
+        setSubCategory('Topwear');
       }
       else{
         toast.error(res.message);

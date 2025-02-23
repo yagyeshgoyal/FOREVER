@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className='flex items-center justify-between py-5 font-medium'>
         <Link to="/"><img src={assets.logo} className='w-36 mx-7 ' /> </Link> 
         
-        <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
+        <ul className='hidden sm:flex items-center gap-5 text-sm text-gray-700'>
 
           <NavLink to="/" className="flex flex-col items-center gap-1">
             <p>HOME</p>
@@ -40,6 +40,13 @@ const Navbar = () => {
             <p>CONTACT</p>
             <hr className='w-[50%] border-none h-[1.5px] bg-gray-500 hidden'/>
           </NavLink>
+          <a href="http://localhost:5174/" target='_blank' className="flex flex-col items-center gap-1">
+            <div className=' border-black-500 border-2 rounded-full px-3 py-1 '>
+              <p className='text-xs text-gray-600'>Admin Panel</p>
+            </div>
+          </a>
+          
+
         
         </ul>
 
@@ -80,6 +87,7 @@ const Navbar = () => {
               <NavLink onClick={()=>{setvisible(false)}} to="/collection" className='border px-6 pl-2'>COLLECTION</NavLink>
               <NavLink onClick={()=>{setvisible(false)}} to="/about" className='border px-6 pl-2'>ABOUT</NavLink>
               <NavLink onClick={()=>{setvisible(false)}} to="/contact" className='border px-6 pl-2'>CONTACT</NavLink>
+              <a onClick={()=>{setvisible(false)}} href="http://localhost:5174/" className='border px-6 pl-2'>Admin Panel</a>
             </div>
         </div>
         
