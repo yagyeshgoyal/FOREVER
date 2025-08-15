@@ -40,7 +40,7 @@ const Navbar = () => {
             <p>CONTACT</p>
             <hr className='w-[50%] border-none h-[1.5px] bg-gray-500 hidden'/>
           </NavLink>
-          <a href="http://localhost:5174/" target='_blank' className="flex flex-col items-center gap-1">
+          <a href="https://forever-admin-self-ten.vercel.app/" target='_blank' className="flex flex-col items-center gap-1">
             <div className=' border-black-500 border-2 rounded-full px-3 py-1 '>
               <p className='text-xs text-gray-600'>Admin Panel</p>
             </div>
